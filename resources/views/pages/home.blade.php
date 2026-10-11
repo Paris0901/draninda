@@ -1,113 +1,255 @@
 @extends('layouts.app')
 
-@section('title', 'Dr. Aninda Sidhana | Psychiatrist, Healthcare Systems Architect & Digital Health Innovator')
+@section('title', 'Dr. Aninda Sidhana | Psychiatrist, Psychosexual Expert & UN SDG Ambassador')
+@section('meta_description', 'Dr. Aninda Sidhana is a psychiatrist, psychosexual medicine specialist, and architect of the Mindweave™ trauma recovery framework. Discover her clinical practice and systemic advocacy.')
 
 @section('content')
 
 <!-- HERO SECTION -->
-<header class="hero" style="min-height:90vh; display:flex; align-items:center; position:relative;">
+<header class="hero" style="min-height:auto; display:flex; align-items:center; position:relative; padding:4.5rem clamp(1rem, 2.5vw, 2rem) 2.5rem;">
   <div class="aurora">
     <span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span>
   </div>
-  <div class="hero-inner" style="max-width:1100px; margin:0 auto; padding:6rem 1.5rem 4rem;">
-    <p class="hero-kicker" style="font-size:0.9rem; letter-spacing:0.12em; color:var(--teal-lt); margin-bottom:1.2rem;">
-      REX KARMAVEER CHAKRA UN LAUREATE · IPS RESILIENCE AWARDEE · DHF MELBOURNE SELECTED
+  <div class="hero-inner" style="max-width:1200px; width:100%; margin:0 auto; padding:0.5rem 0.5rem 1.5rem;">
+    <p class="hero-kicker" style="font-size:0.85rem; letter-spacing:0.12em; color:var(--teal-lt); margin-bottom:1rem;">
+      {{ $settings['hero_kicker'] ?? 'UNITED NATIONS SDG GOODWILL AMBASSADOR · WICCI NATIONAL PRESIDENT · IPS RESILIENCE AWARDEE' }}
     </p>
-    <h1 class="hero-name" style="font-size: clamp(3rem, 6vw, 4.8rem); line-height: 1.1; margin-bottom:1.5rem;">
-      Dr. Aninda<span class="em" style="font-style:italic; font-weight:300;"> Sidhana</span>
+    <h1 class="hero-name" style="font-size: clamp(2.8rem, 5.5vw, 4.4rem); line-height: 1.1; margin-bottom:1.25rem;">
+      {{ $settings['hero_name'] ?? 'Dr. Aninda Sidhana' }}
     </h1>
-    <div class="hero-rule" style="width:80px; height:3px; background:linear-gradient(90deg, var(--teal-lt), var(--pink-lt)); margin-bottom:1.8rem;"></div>
+    <div class="hero-rule" style="width:80px; height:3px; background:linear-gradient(90deg, var(--teal-lt), var(--pink-lt)); margin-bottom:1.5rem;"></div>
     
-    <p class="hero-desc" style="font-size:1.25rem; line-height:1.7; max-width:850px; color:#cbd5e1; margin-bottom:2.5rem;">
-      <strong style="color:#fff; font-size:1.35rem; display:block; margin-bottom:0.4rem;">Scars to Stars — turning lived experience into sovereign healing.</strong>
-      Psychiatrist · Healthcare Systems Architect · National President, WICCI Women's Mental Health Council · Creator of BAYA E Ai™
-    </p>
-
-    <div class="hero-actions" style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-bottom:3.5rem;">
-      <a href="#contact" class="btn-grad" style="padding:1rem 2.2rem; font-size:1rem;">Book a Consultation</a>
-      <a href="{{ route('tech-ai') }}" class="btn-glass" style="padding:1rem 2rem; font-size:1rem; border-color:rgba(31,184,184,0.4); color:var(--teal-lt);">Explore BAYA E Ai™ 🚀</a>
-      <a href="{{ route('journey') }}" class="btn-glass" style="padding:1rem 2rem; font-size:1rem;">View Journey &amp; Legacy →</a>
+    <div class="hero-desc" style="font-size:1.15rem; line-height:1.65; max-width:920px; color:#cbd5e1; margin-bottom:2rem;">
+      <strong style="color:#fff; font-size:1.35rem; display:block; margin-bottom:0.35rem;">{{ $settings['hero_tagline'] ?? 'Clinical Rigor. Human Dignity. Global Resilience.' }}</strong>
+      <span style="color:var(--teal-lt); font-size:0.95rem; display:block; margin-bottom:0.6rem; font-weight:500;">{{ $settings['hero_roles'] ?? 'Psychiatrist | Psychosexual Medicine | Women’s Mental Health | Global Safeguarding Advisor' }}</span>
+      <p style="margin:0 0 0.8rem; color:#cbd5e1;">{{ $settings['hero_subtitle'] ?? 'Synthesizing over 15 years of tertiary clinical psychiatry, advanced psychosexual medicine, and lived survivor wisdom into actionable architectures for human healing and institutional safeguarding.' }}</p>
+      <p style="margin:0; font-size:0.95rem; color:#94a3b8;">Connecting evidence-based clinical care with trauma-informed practice, responsible storytelling, and the question that follows every awareness campaign: <em style="color:#fff;">After awareness, what?</em></p>
     </div>
 
-    <!-- 4 QUICK EXECUTIVE METRIC CHIPS -->
-    <div class="hero-chips" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:1.25rem; max-width:900px;">
-      <div class="chip" style="background:rgba(15,23,42,0.6); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.2rem;">
-        <b style="font-size:1.8rem; color:var(--teal-lt); display:block;">15+</b>
-        <span style="font-size:0.85rem; color:#94a3b8;">Years Clinical Care</span>
+    <div class="hero-actions" style="display:flex; gap:0.85rem; flex-wrap:wrap; margin-bottom:2.25rem;">
+      <a href="#contact" class="btn-grad" style="padding:0.65rem 1.4rem; font-size:0.82rem; letter-spacing:0.05em; font-weight:500;">Book a Clinical Consultation</a>
+      <a href="{{ route('protocols') }}" class="btn-glass" style="padding:0.65rem 1.4rem; font-size:0.82rem; letter-spacing:0.05em; font-weight:500; border-color:rgba(31,184,184,0.4); color:var(--teal-lt);">Explore Proprietary Protocols 🛡️</a>
+      <a href="#speaking" class="btn-glass" style="padding:0.65rem 1.4rem; font-size:0.82rem; letter-spacing:0.05em; font-weight:500;">Speaking &amp; Advisory Inquiries →</a>
+    </div>
+
+    <!-- INSTITUTIONAL TRUST BAR -->
+    <div class="hero-chips" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; max-width:1100px;">
+      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
+        <span style="font-size:0.75rem; color:var(--teal-lt); text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Global Policy</span>
+        <strong style="font-size:0.95rem; color:#fff; display:block;">UN SDG Ambassador</strong>
+        <span style="font-size:0.8rem; color:#94a3b8;">Goodwill Advocacy</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.6); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.2rem;">
-        <b style="font-size:1.8rem; color:var(--pink-lt); display:block;">DHF</b>
-        <span style="font-size:0.85rem; color:#94a3b8;">Melbourne Accelerator</span>
+      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
+        <span style="font-size:0.75rem; color:var(--pink-lt); text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">National Leadership</span>
+        <strong style="font-size:0.95rem; color:#fff; display:block;">WICCI National President</strong>
+        <span style="font-size:0.8rem; color:#94a3b8;">Mental Health Council</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.6); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.2rem;">
-        <b style="font-size:1.8rem; color:#a78bfa; display:block;">UN</b>
-        <span style="font-size:0.85rem; color:#94a3b8;">Karmaveer Chakra</span>
+      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
+        <span style="font-size:0.75rem; color:#a78bfa; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Apex Psychiatry</span>
+        <strong style="font-size:0.95rem; color:#fff; display:block;">IHBAS Senior Resident</strong>
+        <span style="font-size:0.8rem; color:#94a3b8;">Tertiary Neuropsychiatry</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.6); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.2rem;">
-        <b style="font-size:1.8rem; color:#38bdf8; display:block;">24/7</b>
-        <span style="font-size:0.85rem; color:#94a3b8;">Pro Bono Survivor Care</span>
+      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
+        <span style="font-size:0.75rem; color:#38bdf8; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Specialized Fellowship</span>
+        <strong style="font-size:0.95rem; color:#fff; display:block;">JSS Mysore (Dr. TSS Rao)</strong>
+        <span style="font-size:0.8rem; color:#94a3b8;">Psychosexual Medicine</span>
+      </div>
+      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
+        <span style="font-size:0.75rem; color:#fbbf24; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Generational Care</span>
+        <strong style="font-size:0.95rem; color:#fff; display:block;">Tekchand Sidana Hospital</strong>
+        <span style="font-size:0.8rem; color:#94a3b8;">40-Year Family Legacy</span>
       </div>
     </div>
   </div>
 </header>
 
-<!-- EXECUTIVE FOUR PILLARS MATRIX -->
-<section class="sec" style="padding:6rem 1.5rem; background:linear-gradient(180deg, var(--bg-dark), #09121f);">
+<!-- SECTION 2: THE CORE PHILOSOPHY -->
+<section class="sec" style="padding:4.5rem 1.5rem; background:linear-gradient(180deg, #09121f, var(--bg-dark)); border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06);">
   <div class="inner" style="max-width:1150px; margin:0 auto;">
-    <div style="text-align:center; max-width:700px; margin:0 auto 4rem;">
-      <p class="tag rv" style="color:var(--teal-lt);">The Four Sovereign Domains</p>
-      <h2 class="h rv" style="font-size:2.6rem; color:#fff; margin-top:0.4rem;">Architecting the Future of <em>Mental Health</em></h2>
+    <div style="background:rgba(14,23,38,0.7); border:1px solid rgba(31,184,184,0.25); border-radius:24px; padding:3rem; backdrop-filter:blur(10px);">
+      <p class="tag rv" style="color:var(--teal-lt); margin-bottom:0.6rem;">The Core Philosophy</p>
+      <h2 class="h rv" style="font-size:2.4rem; color:#fff; margin-bottom:1.2rem;">A Biopsychosocial-Spiritual Approach to <em>Psychiatry</em></h2>
+      <p class="rv" style="color:#cbd5e1; font-size:1.15rem; line-height:1.8; margin-bottom:1.2rem;">
+        Mental health care must be inextricably linked to human dignity. True healing occurs only when we honor the whole person—their neurobiology, their lived narrative, their pain, and their ultimate capacity for systemic transformation.
+      </p>
+      <p class="rv" style="color:#94a3b8; font-size:1.02rem; line-height:1.8; margin:0;">
+        Dr. Aninda Sidhana operates at the vital intersection of evidence-based clinical science and survivor-centered advocacy. By integrating biological psychiatric treatments with psychological resilience training, social community support, and spiritual restoration of purpose, she ensures that no patient is ever reduced to a mere diagnostic label.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: THE SIX PILLARS OF PRACTICE -->
+<section class="sec" style="padding:5.5rem 1.5rem; background:var(--bg-dark);">
+  <div class="inner" style="max-width:1150px; margin:0 auto;">
+    <div style="text-align:center; max-width:750px; margin:0 auto 3.5rem;">
+      <p class="tag rv" style="color:var(--teal-lt);">The Six Pillars of Practice</p>
+      <h2 class="h rv" style="font-size:2.6rem; color:#fff; margin-top:0.4rem;">Comprehensive Clinical Care &amp; <em>Systemic Advocacy</em></h2>
       <p class="rv" style="color:#94a3b8; font-size:1.05rem; line-height:1.7;">
-        Connecting cutting-edge neuropsychiatric medicine, artificial intelligence, mass sports psychology, and peer-reviewed empirical science.
+        Bridging the gap between individual healing in the clinic and global policy reform across institutions.
       </p>
     </div>
 
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.8rem;">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:1.8rem;">
       
       <!-- Pillar 1 -->
-      <a href="{{ route('protocols') }}" class="executive-card rv" style="text-decoration:none; color:inherit;">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">🧠</div>
-        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Clinical IP &amp; Therapy</span>
-        <h3 style="font-size:1.4rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">The Sidhana Protocols™</h3>
-        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.5rem;">
-          Five copyrighted psychiatric frameworks including MINDWEAVE™, Dignity Dialogues™, and PMDD Partner Button™ for institutional licensing.
+      <div class="executive-card rv">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">🧠</div>
+        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Pillar I · Tertiary Medicine</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">Clinical Psychiatry &amp; Neurobiology</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          Grounded in 15 years of tertiary care and residency at apex institute IHBAS. Evidence-based treatment for depression, treatment-resistant mood disorders, complex anxiety, bipolar illness, and neurobiological trauma.
         </p>
-        <span style="color:var(--teal-lt); font-weight:600; font-size:0.9rem;">Explore 5 Protocols →</span>
-      </a>
+        <a href="#contact" style="color:var(--teal-lt); font-weight:600; font-size:0.88rem; text-decoration:none;">Consultation Details →</a>
+      </div>
 
       <!-- Pillar 2 -->
-      <a href="{{ route('tech-ai') }}" class="executive-card rv" style="text-decoration:none; color:inherit; border-color:rgba(31,184,184,0.3); background:radial-gradient(circle at top right, rgba(31,184,184,0.1), transparent 70%), rgba(14,23,38,0.75);">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">📱</div>
-        <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">DHF Melbourne 2026</span>
-        <h3 style="font-size:1.4rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">BAYA E Ai™ Digital Health</h3>
-        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.5rem;">
-          Empathetic digital health platform architected for real-time symptom monitoring, pattern recognition, and trauma tracking.
+      <div class="executive-card rv">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">🌸</div>
+        <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">Pillar II · Specialized Fellowship</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">Psychosexual Medicine &amp; Somatics</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          Trained under Dr. TSS Rao at JSS Mysore. Breaking cultural taboos to treat sexual pain, intimacy dysfunctions, and the neuro-somatic consequences of abuse with the deep clinical understanding that the body keeps the score.
         </p>
-        <span style="color:var(--pink-lt); font-weight:600; font-size:0.9rem;">Explore AI Platform →</span>
-      </a>
+        <a href="#contact" style="color:var(--pink-lt); font-weight:600; font-size:0.88rem; text-decoration:none;">Confidential Care →</a>
+      </div>
 
       <!-- Pillar 3 -->
-      <a href="{{ route('movements') }}" class="executive-card rv" style="text-decoration:none; color:inherit;">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">🏟️</div>
-        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">FIFA &amp; Mass Psychology</span>
-        <h3 style="font-size:1.4rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">Aura Stadia &amp; Movements</h3>
-        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.5rem;">
-          Safe Stadium Safe Minds for global sporting venues, The Great Unburdening with Raaj Rahi, and corporate burnout reform.
+      <div class="executive-card rv">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">🕊️</div>
+        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Pillar III · Couples &amp; Transitions</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">Marital &amp; Reproductive Therapy</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          Equipping couples with communication scaffolding, boundary mapping, and emotional decoding tools to rebuild intimacy and navigate reproductive trauma, difficult IVF cycles, and miscarriage grief.
         </p>
-        <span style="color:var(--teal-lt); font-weight:600; font-size:0.9rem;">View Global Movements →</span>
-      </a>
+        <a href="#contact" style="color:var(--teal-lt); font-weight:600; font-size:0.88rem; text-decoration:none;">Relationship Support →</a>
+      </div>
 
       <!-- Pillar 4 -->
-      <a href="{{ route('research') }}" class="executive-card rv" style="text-decoration:none; color:inherit;">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">📄</div>
-        <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">Peer-Reviewed Science</span>
-        <h3 style="font-size:1.4rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">Academic Research</h3>
-        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.5rem;">
-          8+ empirical studies across international psychiatric journals covering domestic violence, psychosexual recovery, and neuroimmunology.
+      <a href="{{ route('protocols') }}#mindweave" class="executive-card rv" style="text-decoration:none; color:inherit;">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">🛡️</div>
+        <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">Pillar IV · Proprietary IP</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">MINDWEAVE™ Trauma Architecture</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          A daily clinical architecture designed to transition survivors from acute nervous system dysregulation to everyday resilience through structured self-inquiry, neuro-somatic resets, and boundary mapping.
         </p>
-        <span style="color:var(--pink-lt); font-weight:600; font-size:0.9rem;">Search 8+ Publications →</span>
+        <span style="color:var(--pink-lt); font-weight:600; font-size:0.88rem;">Explore Framework →</span>
       </a>
 
+      <!-- Pillar 5 -->
+      <a href="{{ route('protocols') }}#safemind" class="executive-card rv" style="text-decoration:none; color:inherit;">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">🏟️</div>
+        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Pillar V · Mass Safeguarding</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">SafeMind™ Stadium Safeguarding</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          Co-developed with Dr. Amrit Pattojoshi: translating bedside neuro-clinical care into stadium-scale safeguarding. Mitigates neuro-thermal crowd compression through cooling sanctuaries and emotional triage.
+        </p>
+        <span style="color:var(--teal-lt); font-weight:600; font-size:0.88rem;">Explore SafeMind™ →</span>
+      </a>
+
+      <!-- Pillar 6 -->
+      <a href="{{ route('protocols') }}#dignity-dialogues" class="executive-card rv" style="text-decoration:none; color:inherit;">
+        <div style="font-size:2.2rem; margin-bottom:0.8rem;">⚖️</div>
+        <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">Pillar VI · Public Health Advocacy</span>
+        <h3 style="font-size:1.35rem; color:#fff; margin:0.4rem 0 0.8rem; font-family:var(--display);">The Dignity Dialogues™ &amp; WINGS</h3>
+        <p style="color:#94a3b8; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem;">
+          Transforming private trauma and scar narratives into collective narrative capital, structural safety algorithms, and legislative advocacy to protect survivors of domestic abuse and coercive control.
+        </p>
+        <span style="color:var(--pink-lt); font-weight:600; font-size:0.88rem;">Explore Advocacy →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: SOCIAL PROOF & GENERATIONAL LEGACY -->
+<section class="sec" style="padding:4.5rem 1.5rem; background:linear-gradient(180deg, #09121f, #070d17); border-top:1px solid rgba(255,255,255,0.06);">
+  <div class="inner" style="max-width:1150px; margin:0 auto;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:3rem; align-items:center;">
+      <div class="rv">
+        <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Generational Roots · Established Care</span>
+        <h2 style="font-family:var(--display); font-size:2.4rem; color:#fff; margin:0.4rem 0 1rem;">
+          A Legacy of <em>Psychiatric Excellence</em>
+        </h2>
+        <p style="color:#cbd5e1; font-size:1.05rem; line-height:1.8; margin-bottom:1.2rem;">
+          Carrying forward the venerable legacy of her father, <strong>Dr. Roop Chand Sidana</strong>—a foundational figure in Indian psychiatry with over four decades of uninterrupted clinical practice—Dr. Aninda Sidhana merges generational clinical wisdom with modern neuroimmunology and global human rights advocacy.
+        </p>
+        <p style="color:#94a3b8; font-size:0.95rem; line-height:1.7; margin-bottom:1.5rem;">
+          Operating out of the <strong>Tekchand Sidana Memorial Hospital</strong> in Sri Ganganagar, Rajasthan, her practice provides trusted, confidential care both on-site and internationally via secure tele-psychiatry.
+        </p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="#contact" class="btn-grad" style="padding:0.75rem 1.6rem; font-size:0.85rem;">Schedule Hospital or Tele-Visit →</a>
+        </div>
+      </div>
+
+      <div class="rv" style="background:rgba(14,23,38,0.7); border:1px solid rgba(255,255,255,0.08); border-radius:20px; padding:2rem;">
+        <h3 style="color:#fff; font-size:1.2rem; margin:0 0 1.2rem; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:0.8rem;">Clinical Facility &amp; Practice Details</h3>
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <div>
+            <span style="color:var(--teal-lt); font-size:0.75rem; text-transform:uppercase; font-weight:600;">Hospital Location</span>
+            <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">Tekchand Sidana Memorial Hospital</p>
+            <p style="color:#94a3b8; margin:0.1rem 0 0; font-size:0.85rem;">1-B-4, Sukhadia Nagar, Indira Colony, Sri Ganganagar, Rajasthan 335001</p>
+          </div>
+          <div>
+            <span style="color:var(--pink-lt); font-size:0.75rem; text-transform:uppercase; font-weight:600;">Consultation Formats</span>
+            <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">In-Person OPD &amp; Secure Tele-Psychiatry Consultations</p>
+          </div>
+          <div style="background:rgba(31,184,184,0.08); padding:0.8rem; border-radius:10px; border-left:3px solid var(--teal-lt);">
+            <strong style="color:var(--teal-lt); font-size:0.85rem; display:block;">Immediate Emergency Care</strong>
+            <p style="color:#cbd5e1; font-size:0.82rem; margin:0.2rem 0 0;">For acute psychiatric emergencies in India, please call Tele-MANAS toll-free at <strong>14416</strong> or contact your nearest emergency center immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: SPEAKING THEMES & ADVISORY -->
+<section id="speaking" class="sec" style="padding:5rem 1.5rem; background:#070d17;">
+  <div class="inner" style="max-width:1150px; margin:0 auto;">
+    <div style="text-align:center; max-width:750px; margin:0 auto 3.5rem;">
+      <p class="tag rv" style="color:var(--teal-lt);">Keynotes &amp; Institutional Advisory</p>
+      <h2 class="h rv" style="font-size:2.5rem; color:#fff; margin-top:0.3rem;">Turn Mental Health Awareness into <em>Meaningful Action</em></h2>
+      <p class="rv" style="color:#94a3b8; font-size:1.05rem; line-height:1.7;">
+        Clinically informed, humane thought leadership for corporate boardrooms, media productions, and global policy forums.
+      </p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem;">
+      <div class="executive-card rv">
+        <strong style="color:var(--teal-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 01</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">After Awareness, What?</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Moving beyond generic recognition to institutional accountability, leadership practices, and systemic pathways to care.</p>
+      </div>
+      <div class="executive-card rv">
+        <strong style="color:var(--pink-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 02</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">The Fear of Not Mattering™</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Exploring belonging, recognition, and the silent emotional cost of feeling dispensable in hyper-competitive environments.</p>
+      </div>
+      <div class="executive-card rv">
+        <strong style="color:var(--teal-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 03</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">Women’s Health Beyond Fertility</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Bringing psychological wellbeing into conversations about women’s bodies across the full lifespan—PMDD, PCOS, and perimenopause.</p>
+      </div>
+      <div class="executive-card rv">
+        <strong style="color:var(--pink-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 04</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">When AI Encounters Distress</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Human judgment, consent, privacy safeguards, and escalation protocols in sensitive digital mental-health applications.</p>
+      </div>
+      <div class="executive-card rv">
+        <strong style="color:var(--teal-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 05</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">Cinema &amp; the Mind</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Every frame shapes a mind: how visual storytelling influences societal understanding of trauma, gender, and recovery.</p>
+      </div>
+      <div class="executive-card rv">
+        <strong style="color:var(--pink-lt); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Theme 06</strong>
+        <h3 style="font-size:1.2rem; color:#fff; margin:0 0 0.5rem; font-family:var(--display);">Men’s Mental Health Beyond Gender Wars</h3>
+        <p style="color:#94a3b8; font-size:0.88rem; line-height:1.6; margin:0;">Creating safe room for vulnerability, emotional expression, and male allyship while advancing equality and mutual dignity.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="#contact" class="btn-grad" style="padding:0.85rem 2rem;">Inquire for Keynote or Advisory Brief →</a>
     </div>
   </div>
 </section>
@@ -232,6 +374,20 @@
             <div>
               <span style="color:#94a3b8; font-size:0.75rem; display:block; text-transform:uppercase;">WICCI National Council</span>
               <a href="https://www.wicciminds.com" target="_blank" rel="noopener" style="color:var(--pink-lt); font-weight:600; text-decoration:none;">wicciminds.com ↗</a>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:1rem; background:rgba(14,23,38,0.6); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.06);">
+            <span style="font-size:1.5rem;">🎙️</span>
+            <div>
+              <span style="color:#94a3b8; font-size:0.75rem; display:block; text-transform:uppercase;">The Listening Commons Podcast</span>
+              <a href="https://listeningcommons.com" target="_blank" rel="noopener" style="color:var(--teal-lt); font-weight:600; text-decoration:none;">listeningcommons.com ↗</a>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:1rem; background:rgba(14,23,38,0.6); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.06);">
+            <span style="font-size:1.5rem;">🏥</span>
+            <div>
+              <span style="color:#94a3b8; font-size:0.75rem; display:block; text-transform:uppercase;">Clinical Appointments</span>
+              <span style="color:#fff; font-size:0.9rem;">Tekchand Sidana Memorial Hospital (OPD &amp; Tele-Psychiatry)</span>
             </div>
           </div>
         </div>

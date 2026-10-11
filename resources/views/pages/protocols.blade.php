@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Clinical Protocols & Psychiatric IP Manual | Dr. Aninda Sidhana')
-@section('meta_description', 'Official clinical IP manual for The Sidhana Pattojoshi Protocols™: MINDWEAVE, Dignity Dialogues, PMDD Partner Button, Healing Justice Toolkit, and WINGS Framework.')
+@section('title', 'Proprietary Clinical Protocols | Mindweave & The Dignity Dialogues')
+@section('meta_description', 'Explore Dr. Aninda Sidhana\'s copyrighted clinical frameworks: The Mindweave Framework, The Dignity Dialogues, PMDD Partner Button, and the SafeMind global safeguarding initiative.')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/protocols.css') }}">
@@ -13,10 +13,10 @@
 <header class="hero-proto">
   <div class="hero-proto-inner">
     <div class="hero-proto-content">
-      <p class="tag">Clinical IP &amp; Methodology Manual · Version 1.0</p>
-      <h1>Sidhana Pattojoshi <em>Protocols™</em></h1>
+      <p class="tag">Institutional Safeguarding &amp; Trauma Architecture · Version 1.0</p>
+      <h1>The Sidhana-Pattojoshi <em>Protocols™</em></h1>
       <p class="lead">
-        Synthesizing over 15 years of tertiary clinical psychiatry, lived survivor wisdom, and international safeguarding advocacy into five copyrighted, actionable architectures designed for institutional licensing and global impact.
+        Synthesizing over 15 years of tertiary clinical psychiatry, lived survivor wisdom, and international safeguarding advocacy into actionable, licensable architectures designed to protect human dignity.
       </p>
       <div class="ip-pill">
         <span>🛡️</span>

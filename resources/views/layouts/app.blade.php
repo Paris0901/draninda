@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yield('title', 'Dr. Aninda Sidhana | Psychiatrist, Healthcare Systems Architect & Digital Health Innovator')</title>
-  <meta name="description" content="@yield('meta_description', 'Official portal of Dr. Aninda Sidhana — Psychiatrist, Rex Karmaveer Chakra UN Laureate, WICCI National President, Creator of BAYA E Ai & DHF Melbourne 2026 Fellow.')">
-  <meta name="keywords" content="Dr. Aninda Sidhana, Psychiatrist India, BAYA E Ai, DHF Melbourne, WICCI National President, IPS Women Resilience Award, Psychosexual Medicine, Trauma Recovery, Aura Stadia FIFA">
+  <title>@yield('title', 'Dr. Aninda Sidhana | Psychiatrist, Psychosexual Expert & UN SDG Ambassador')</title>
+  <meta name="description" content="@yield('meta_description', 'Official portal of Dr. Aninda Sidhana — Psychiatrist, Psychosexual Medicine Specialist, WICCI National President, and Architect of Trauma Recovery Frameworks.')">
+  <meta name="keywords" content="Dr. Aninda Sidhana, Psychiatrist India, Psychosexual Medicine, Mindweave, The Dignity Dialogues, WICCI National President, IPS Women Resilience Award, SafeMind FIFA, Tekchand Sidana Hospital">
   <meta name="author" content="Dr. Aninda Sidhana">
   <link rel="canonical" href="{{ url()->current() }}">
   <link rel="icon" type="image/svg+xml" href="{{ asset('assets/images/favicon.svg') }}">

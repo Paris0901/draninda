@@ -38,6 +38,31 @@
     </div>
   </div>
 
+  <!-- CINEMA & THE MIND & THE LISTENING COMMONS -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; margin-bottom:4rem;">
+    <!-- Cinema & the Mind -->
+    <div class="executive-card" style="border-color:rgba(31,184,184,0.3); background:linear-gradient(135deg, rgba(14,23,38,0.9), #070d17); padding:2.2rem;">
+      <span class="badge-pill badge-teal" style="margin-bottom:0.8rem;">Cinema &amp; Cultural Psychiatry</span>
+      <h3 style="font-family:var(--display); font-size:1.6rem; color:#fff; margin:0.3rem 0 0.6rem;">Cinema &amp; the Mind</h3>
+      <p style="color:var(--pink-lt); font-size:0.95rem; font-weight:600; margin-bottom:0.8rem;">"Every Frame Shapes a Mind."</p>
+      <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.7; margin-bottom:1.2rem;">
+        Bringing psychiatric insight into dialogue with filmmakers and storytellers about representation, creative freedom, and psychological responsibility. Documented at the 19th Global Film Festival Noida (AAFT/Marwah Studios) to encourage stories that preserve complexity and human dignity.
+      </p>
+      <a href="mailto:{{ $settings['contact_email'] ?? 'draninda30@gmail.com' }}?subject=Cinema%20and%20the%20Mind%20Workshop" style="color:var(--teal-lt); font-weight:600; font-size:0.88rem; text-decoration:none;">Enquire About Media &amp; Cinema Workshops →</a>
+    </div>
+
+    <!-- The Listening Commons -->
+    <div class="executive-card" style="border-color:rgba(239,107,156,0.3); background:linear-gradient(135deg, rgba(14,23,38,0.9), #070d17); padding:2.2rem;">
+      <span class="badge-pill badge-pink" style="margin-bottom:0.8rem;">Dialogue Platform</span>
+      <h3 style="font-family:var(--display); font-size:1.6rem; color:#fff; margin:0.3rem 0 0.6rem;">The Listening Commons</h3>
+      <p style="color:var(--teal-lt); font-size:0.95rem; font-weight:600; margin-bottom:0.8rem;">Co-hosted with Scott Douglas Jacobsen</p>
+      <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.7; margin-bottom:1.2rem;">
+        "A conversation can make room for what a headline leaves out." In-depth dialogues exploring psychiatry, culture, relationships, consciousness, human rights, and the human condition.
+      </p>
+      <a href="https://listeningcommons.com/" target="_blank" rel="noopener" class="btn-grad" style="padding:0.6rem 1.3rem; font-size:0.82rem; text-decoration:none;">Explore Episodes on ListeningCommons.com ↗</a>
+    </div>
+  </div>
+
   <!-- PODCASTS GRID -->
   <h2 style="font-family:var(--display); font-size:2.2rem; color:#fff; margin-bottom:1.8rem;">🎙️ Broadcast Podcasts &amp; Audio Series</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; margin-bottom:5rem;">

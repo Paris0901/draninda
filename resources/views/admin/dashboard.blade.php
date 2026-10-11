@@ -70,7 +70,12 @@
     </div>
 
     <div class="form-group">
-      <label class="form-label">Hero Subtitle / Clinical Roles</label>
+      <label class="form-label">Hero Roles / Practice Areas</label>
+      <input type="text" name="hero_roles" class="form-control" value="{{ $settings['hero_roles'] ?? 'Psychiatrist | Psychosexual Medicine | Women’s Mental Health | Global Safeguarding Advisor' }}">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Hero Subtitle / Description</label>
       <textarea name="hero_subtitle" class="form-control" rows="2">{{ $settings['hero_subtitle'] ?? '' }}</textarea>
     </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'About Dr. Aninda Sidhana | Career Journey, Hospital Legacy & Awards')
-@section('meta_description', 'Learn about Dr. Aninda Sidhana — Psychiatrist, WICCI National President, D Y Patil MBBS, MGMCRI MD, IHBAS Senior Resident, and recipient of the UN Rex Karmaveer Chakra.')
+@section('title', 'About Dr. Aninda Sidhana | Psychiatrist & Architect of Healing Justice')
+@section('meta_description', 'Learn about Dr. Aninda Sidhana’s rigorous medical background, fellowship in psychosexual medicine, leadership at WICCI, and journey of profound resilience.')
 
 @section('content')
 
@@ -12,20 +12,21 @@
       
       <!-- HERO CONTENT -->
       <div>
-        <span class="badge-pill badge-teal" style="margin-bottom:1.2rem;">Biography &amp; Leadership</span>
+        <span class="badge-pill badge-teal" style="margin-bottom:1.2rem;">Architect of Healing Justice</span>
         <h1 style="font-family:var(--display); font-size:clamp(2.6rem, 5vw, 4rem); color:#fff; line-height:1.15; margin:0 0 1.2rem;">
           Dr. Aninda <span style="background:linear-gradient(100deg,var(--teal-lt),var(--pink-lt));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Sidhana</span>
         </h1>
-        <p style="color:#cbd5e1; font-size:1.2rem; line-height:1.7; margin-bottom:1.5rem;">
-          <strong>Psychiatrist · Healthcare Systems Architect · Digital Health Innovator</strong>
+        <p style="color:#cbd5e1; font-size:1.2rem; line-height:1.7; margin-bottom:1.2rem;">
+          <strong>Bridging the critical gap between the psychiatric clinic, international public health policy, and the lived realities of trauma survivors.</strong>
         </p>
         <p style="color:#94a3b8; font-size:1.05rem; line-height:1.8; margin-bottom:2rem;">
-          Where lived survivor resilience meets over 15 years of tertiary neuropsychiatry, multi-generational hospital heritage, and national policy design. Serving as National President of the WICCI National Women's Mental Health &amp; Psychosocial Wellness Council.
+          Synthesizing over 15 years of tertiary clinical psychiatry, advanced psychosexual medicine, and lived survivor wisdom into actionable architectures for human healing and institutional safeguarding.
         </p>
 
         <!-- SUBSECTION NAVIGATION TABS -->
         <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
-          <a href="#bio" class="filter-btn">Biography</a>
+          <a href="#bio" class="filter-btn">Clinical Foundations</a>
+          <a href="#survivor" class="filter-btn">Architectural Resilience</a>
           <a href="#timeline" class="filter-btn">Milestones (2009–2026)</a>
           <a href="#legacy" class="filter-btn">Hospital Legacy</a>
           <a href="#awards" class="filter-btn">Awards &amp; Honors</a>
@@ -48,7 +49,7 @@
                 <strong style="color:#fff; font-size:1.1rem; display:block;">Dr. Aninda Sidhana</strong>
                 <span style="color:var(--teal-lt); font-size:0.8rem; font-weight:500;">National President, WICCI Council</span>
               </div>
-              <span class="badge-pill badge-pink" style="font-size:0.75rem;">MD · MBBS</span>
+              <span class="badge-pill badge-pink" style="font-size:0.75rem;">MD · MBBS · Fellow</span>
             </div>
           </div>
         </div>
@@ -60,21 +61,21 @@
 
 <main style="max-width:1150px; margin:4rem auto; padding:0 1.5rem;">
 
-  <!-- SECTION 1: DETAILED BIOGRAPHY -->
-  <section id="bio" style="margin-bottom:5rem;">
+  <!-- SECTION 1: CLINICAL & ACADEMIC FOUNDATIONS -->
+  <section id="bio" style="margin-bottom:4rem;">
     <div class="executive-card" style="padding:3rem;">
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:3rem; align-items:flex-start;">
         <div>
-          <span class="badge-pill badge-pink" style="margin-bottom:1rem;">The Living Spirit</span>
-          <h2 style="font-family:var(--display); font-size:2.2rem; color:#fff; margin:0.3rem 0 1.2rem;">Lived Experience as Clinical Wisdom</h2>
+          <span class="badge-pill badge-teal" style="margin-bottom:1rem;">Clinical Foundations</span>
+          <h2 style="font-family:var(--display); font-size:2.2rem; color:#fff; margin:0.3rem 0 1.2rem;">Medical Rigor &amp; Specialized Expertise</h2>
           <p style="color:#cbd5e1; font-size:1.05rem; line-height:1.8; margin-bottom:1.2rem;">
-            Dr. Aninda Sidhana (born August 30, 1985) is an Indian psychiatrist, healthcare systems architect, and digital health innovator. She serves as the <strong>National President of the WICCI National Women's Mental Health &amp; Psychosocial Wellness Council</strong>.
+            Dr. Aninda Sidhana, MD, is a psychiatrist and psychosexual medicine specialist whose career is defined by rigorous academic pursuit and compassionate clinical application. Her foundational medical training was established through an intensive residency at the <strong>Institute of Human Behaviour and Allied Sciences (IHBAS)</strong> in Delhi, widely regarded as India’s apex neuropsychiatric center.
           </p>
           <p style="color:#94a3b8; font-size:1rem; line-height:1.8; margin-bottom:1.2rem;">
-            Having navigated domestic trauma, emotional manipulation, and marriage rupture herself, Dr. Sidhana transforms personal scars into clinical authority — the credential that cannot be awarded in classrooms.
+            Recognizing the profound, often unspoken intersection of psychological trauma and sexual health, she subsequently completed a specialized <strong>Fellowship in Psychosexual Medicine at the JSS Academy of Higher Education and Research</strong> in Mysuru, training under the esteemed mentorship of Dr. TSS Rao.
           </p>
           <p style="color:#94a3b8; font-size:1rem; line-height:1.8;">
-            She holds key administrative offices in primary medical bodies, including Honorary Assistant General Secretary of the <strong>Indian Psychiatric Society (North Zone)</strong> and Convener of the Sexual Medicine Committee for the <strong>Indian Association of Private Psychiatry (IAPP)</strong>.
+            A consulting specialist at the <strong>Tekchand Sidana Memorial Hospital</strong> in Sri Ganganagar, Rajasthan, Dr. Sidhana seamlessly integrates complex psychopharmacology, cognitive behavioral therapy, and somatic grounding techniques into her daily clinical practice. Her academic rigor is further demonstrated by her appointment as <strong>Assistant Editor for the Indian Journal of Psychological Medicine (IJPM)</strong>, where she contributes to the editorial integrity and advancement of psychiatric research.
           </p>
         </div>
 
@@ -94,10 +95,40 @@
               <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">IHBAS Neuropsychiatry Referral Center, Delhi</p>
             </div>
             <div>
-              <span style="color:var(--teal-lt); font-size:0.8rem; text-transform:uppercase; font-weight:600;">Academic Faculty Tenure</span>
-              <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">Ex-Assistant Professor — Santosh Medical College</p>
+              <span style="color:var(--teal-lt); font-size:0.8rem; text-transform:uppercase; font-weight:600;">Subspecialty Fellowship</span>
+              <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">Fellowship in Psychosexual Medicine — JSS Mysuru</p>
+            </div>
+            <div>
+              <span style="color:var(--teal-lt); font-size:0.8rem; text-transform:uppercase; font-weight:600;">Editorial Integrity</span>
+              <p style="color:#fff; margin:0.2rem 0 0; font-size:0.95rem;">Assistant Editor — Indian Journal of Psychological Medicine (IJPM)</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: THE LIVED EXPERIENCE TO SYSTEM BUILDER -->
+  <section id="survivor" style="margin-bottom:5rem;">
+    <div class="executive-card" style="padding:3rem; background:linear-gradient(135deg, rgba(14,23,38,0.9), #0b1523); border-color:rgba(239,107,156,0.3);">
+      <span class="badge-pill badge-pink" style="margin-bottom:1rem;">Architectural Resilience</span>
+      <h2 style="font-family:var(--display); font-size:2.2rem; color:#fff; margin:0.3rem 0 1.2rem;">From Survivor to System Builder</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2.5rem;">
+        <div>
+          <p style="color:#cbd5e1; font-size:1.05rem; line-height:1.8; margin-bottom:1.2rem;">
+            Dr. Sidhana’s clinical frameworks are deeply informed by her own profound personal resilience. Having navigated the harrowing realities of systemic domestic violence, coercive control, and the severe medical and emotional trauma associated with multiple IVF cycles and miscarriages, she intimately understands that standard textbook definitions of trauma often fail to capture the systemic isolation victims endure.
+          </p>
+          <p style="color:#94a3b8; font-size:1rem; line-height:1.8;">
+            Through intensive therapy, relentless self-advocacy, and transformative solo travel—including a pivotal journey across Iceland that helped her reclaim her autonomy—she rebuilt her life and discovered a higher purpose.
+          </p>
+        </div>
+        <div style="background:rgba(7,13,23,0.7); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:2rem; display:flex; flex-direction:column; justify-content:center;">
+          <p style="color:#fff; font-size:1.05rem; line-height:1.7; margin-bottom:1.2rem; font-style:italic;">
+            "Transparency serves a critical public health function: breaking the pervasive silence that traps millions. Trauma can be transformed into structural, life-saving architecture for others."
+          </p>
+          <span style="color:var(--teal-lt); font-size:0.85rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em;">
+            Recipient of the 2024 IPS Women Resilience Award &amp; UN Rex Karmaveer Chakra
+          </span>
         </div>
       </div>
     </div>
