@@ -33,30 +33,30 @@
     </div>
 
     <!-- INSTITUTIONAL TRUST BAR -->
-    <div class="hero-chips" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; max-width:1100px;">
-      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
-        <span style="font-size:0.75rem; color:var(--teal-lt); text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Global Policy</span>
-        <strong style="font-size:0.95rem; color:#fff; display:block;">UN SDG Ambassador</strong>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap:1rem; max-width:1150px; margin-top:2rem;">
+      <div style="background:rgba(14,23,38,0.75); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.1rem 1.25rem; display:flex; flex-direction:column; justify-content:center; gap:0.25rem; box-sizing:border-box;">
+        <span style="font-size:0.72rem; color:var(--teal-lt); text-transform:uppercase; font-weight:700; letter-spacing:0.08em;">Global Policy</span>
+        <strong style="font-size:0.98rem; color:#fff; font-weight:600; line-height:1.3; margin:0.15rem 0;">UN SDG Ambassador</strong>
         <span style="font-size:0.8rem; color:#94a3b8;">Goodwill Advocacy</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
-        <span style="font-size:0.75rem; color:var(--pink-lt); text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">National Leadership</span>
-        <strong style="font-size:0.95rem; color:#fff; display:block;">WICCI National President</strong>
+      <div style="background:rgba(14,23,38,0.75); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.1rem 1.25rem; display:flex; flex-direction:column; justify-content:center; gap:0.25rem; box-sizing:border-box;">
+        <span style="font-size:0.72rem; color:var(--pink-lt); text-transform:uppercase; font-weight:700; letter-spacing:0.08em;">National Leadership</span>
+        <strong style="font-size:0.98rem; color:#fff; font-weight:600; line-height:1.3; margin:0.15rem 0;">WICCI National President</strong>
         <span style="font-size:0.8rem; color:#94a3b8;">Mental Health Council</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
-        <span style="font-size:0.75rem; color:#a78bfa; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Apex Psychiatry</span>
-        <strong style="font-size:0.95rem; color:#fff; display:block;">IHBAS Senior Resident</strong>
+      <div style="background:rgba(14,23,38,0.75); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.1rem 1.25rem; display:flex; flex-direction:column; justify-content:center; gap:0.25rem; box-sizing:border-box;">
+        <span style="font-size:0.72rem; color:#a78bfa; text-transform:uppercase; font-weight:700; letter-spacing:0.08em;">Apex Psychiatry</span>
+        <strong style="font-size:0.98rem; color:#fff; font-weight:600; line-height:1.3; margin:0.15rem 0;">IHBAS Senior Resident</strong>
         <span style="font-size:0.8rem; color:#94a3b8;">Tertiary Neuropsychiatry</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
-        <span style="font-size:0.75rem; color:#38bdf8; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Specialized Fellowship</span>
-        <strong style="font-size:0.95rem; color:#fff; display:block;">JSS Mysore (Dr. TSS Rao)</strong>
+      <div style="background:rgba(14,23,38,0.75); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.1rem 1.25rem; display:flex; flex-direction:column; justify-content:center; gap:0.25rem; box-sizing:border-box;">
+        <span style="font-size:0.72rem; color:#38bdf8; text-transform:uppercase; font-weight:700; letter-spacing:0.08em;">Specialized Fellowship</span>
+        <strong style="font-size:0.98rem; color:#fff; font-weight:600; line-height:1.3; margin:0.15rem 0;">JSS Mysore (Dr. TSS Rao)</strong>
         <span style="font-size:0.8rem; color:#94a3b8;">Psychosexual Medicine</span>
       </div>
-      <div class="chip" style="background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1rem;">
-        <span style="font-size:0.75rem; color:#fbbf24; text-transform:uppercase; font-weight:600; display:block; margin-bottom:0.2rem;">Generational Care</span>
-        <strong style="font-size:0.95rem; color:#fff; display:block;">Tekchand Sidana Hospital</strong>
+      <div style="background:rgba(14,23,38,0.75); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:1.1rem 1.25rem; display:flex; flex-direction:column; justify-content:center; gap:0.25rem; box-sizing:border-box;">
+        <span style="font-size:0.72rem; color:#fbbf24; text-transform:uppercase; font-weight:700; letter-spacing:0.08em;">Generational Care</span>
+        <strong style="font-size:0.98rem; color:#fff; font-weight:600; line-height:1.3; margin:0.15rem 0;">Tekchand Sidana Hospital</strong>
         <span style="font-size:0.8rem; color:#94a3b8;">40-Year Family Legacy</span>
       </div>
     </div>

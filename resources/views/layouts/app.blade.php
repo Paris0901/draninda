@@ -185,13 +185,11 @@
             <li><a href="https://www.linkedin.com/in/dr-aninda-sidhana-642978291/" target="_blank" rel="noopener">LinkedIn Profile ↗</a></li>
             <li><a href="https://scholar.google.com/scholar?q=Aninda+Sidana" target="_blank" rel="noopener">Google Scholar Profile ↗</a></li>
             <li><a href="https://dranindasidhana.substack.com" target="_blank" rel="noopener">The Dignity Dialogues Substack ↗</a></li>
-            <li><a href="{{ route('admin.dashboard') }}" style="color:var(--teal-lt); font-weight:600;">Admin CMS Portal 🔒</a></li>
           </ul>
         </div>
       </div>
       <div class="ftbot">
         <p>© 2026 Dr. Aninda Sidhana · <a href="https://dranindasidhana.com">dranindasidhana.com</a> · <a href="mailto:{{ $settings['contact_email'] ?? 'draninda30@gmail.com' }}">{{ $settings['contact_email'] ?? 'draninda30@gmail.com' }}</a></p>
-        <p>Database-Driven Executive Portal · Hostinger Production Ready</p>
       </div>
     </div>
   </footer>
